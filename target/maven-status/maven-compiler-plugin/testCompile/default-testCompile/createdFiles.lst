@@ -1,0 +1,9 @@
+au/com/ebay/product/Product.class
+au/com/ebay/pages/SearchResultsPage.class
+au/com/ebay/pages/ProductPage.class
+au/com/ebay/tests/BaseTestSuite.class
+au/com/ebay/dialogs/AddedToCartDialog.class
+au/com/ebay/tests/AddToCartTest.class
+au/com/ebay/pages/CartPage.class
+au/com/ebay/pages/HomePage.class
+au/com/ebay/pages/BasePage.class
