@@ -5,4 +5,4 @@ They would need to replaced to run on windows.
 
 ## Configuration and Usage
 
-1. Clone the repo and run `./tests.sh` or `mvn clean install tests`
+1. Clone the repo and run `./tests.sh` or `mvn clean install test`
