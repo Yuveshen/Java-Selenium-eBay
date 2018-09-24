@@ -1,13 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 102.309 s <<< FAILURE! - in TestSuite
-tearDownAfterClass(au.com.ebay.tests.AddToCartTest)  Time elapsed: 84.735 s  <<< FAILURE!
-org.openqa.selenium.NoSuchSessionException: 
-Tried to run command without establishing a connection
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: '192-168-1-8.tpgi.com.au', ip: 'fe80:0:0:0:107a:d63c:c0e5:1d6e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.22.0, moz:headless: false, moz:processID: 64440, moz:profile: /var/folders/8m/v08smxzn22x..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.7.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 08c9957d-b18d-854d-8378-7937d8613a54
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 41.889 s - in TestSuite

@@ -1,7 +1,6 @@
 package au.com.ebay.tests;
 
 import org.junit.Assert;
-//import org.junit.Test;
 
 import org.testng.annotations.Test;
 
@@ -20,17 +19,15 @@ public class AddToCartTest extends BaseTestSuite {
 		String productTwo = "Soccer Ball";
 		
 		HomePage homePage = new HomePage(driver);
-		homePage.setSearchString(productOne);
-		SearchResultsPage searchResultsPage = homePage.clickSearchButton();
+        SearchResultsPage searchResultsPage = homePage.searchForProduct(productOne);
 		ProductPage productPage = searchResultsPage.selectFirstProduct(productOne);
 		String titleOne = productPage.getProductTitle();
 		
 		AddedToCartDialog addedToCartDialog = productPage.clickAddToCartBtn();
 		productPage = addedToCartDialog.clickCloseDialog();
 		Assert.assertEquals("Add first product : Cart Quantity is incorrect", 1, productPage.getCartCount());
-		
-		productPage.setSearchString(productTwo);
-		searchResultsPage = productPage.clickSearchButton();
+
+        searchResultsPage = homePage.searchForProduct(productTwo);
 		productPage = searchResultsPage.selectFirstProduct(productTwo);
 		String titleTwo = productPage.getProductTitle();
 		
@@ -39,8 +36,8 @@ public class AddToCartTest extends BaseTestSuite {
 		Assert.assertEquals("Add second product : Cart Quantity is incorrect", 2, productPage.getCartCount());
 		
 		CartPage cartPage = productPage.clickCartButton();
-		Assert.assertTrue("Product not in cart", cartPage.findProductInCart(titleOne));
-		Assert.assertTrue("Product not in cart", cartPage.findProductInCart(titleTwo));
+		Assert.assertTrue("Product one not in cart", cartPage.findProductInCart(titleOne));
+		Assert.assertTrue("Product two not in cart", cartPage.findProductInCart(titleTwo));
 	}
 
 }

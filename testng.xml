@@ -5,16 +5,16 @@
 <suite name="Suite" parallel="tests">
 
     <test name="FirefoxTest">
-        <parameter name="browser" value="firefox" />
+        <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="au.com.ebay.tests.AddToCartTest" />
+            <class name="au.com.ebay.tests.AddToCartTest"/>
         </classes>
     </test>
 
     <test name="ChromeTest">
-        <parameter name="browser" value="chrome" />
+        <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="au.com.ebay.tests.AddToCartTest" />
+            <class name="au.com.ebay.tests.AddToCartTest"/>
         </classes>
     </test>
 

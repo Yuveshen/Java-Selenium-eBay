@@ -5,19 +5,19 @@ import org.openqa.selenium.WebElement;
 
 public class Product {
 
-	WebElement element;
-	
-	public Product(WebElement element) {
-		this.element = element;
-	}
+    WebElement element;
 
-	public String getTitle() {
-		return element.findElement(By.className("product-title")).getText();	
-	}
-	
-	public void clickAddToCart() {
-		element.findElement(By.className("atcRedesignId_btn")).click();
-	}
+    public Product(WebElement element) {
+
+        this.element = element;
+    }
+
+    public String getTitle() {
+        return element.findElement(By.className("s-item__title")).getText();
+    }
+
+    public void selectProduct() {
+        element.findElement(By.className("s-item__title")).click();
+    }
 }
 
-//TODO not needed at moment
